@@ -1,0 +1,24 @@
+Структура:
+файл банки:
+    конкретный банк
+        имя банка
+        страна банка
+        вклады банка
+            конкректный вклад = имя вклада
+                клиенты банка
+                    конкретный клиент = имя
+                        id клиента
+                        величина вклада
+                        процентная ставка
+                        срок вклада
+ В xsd: {
+<schema xmlns="http://www.w3.org/2001/XMLSchema"
+        targetNamespace="http://www.example.com/banks"<!--задает имя "пространства имен(пакета имен)" для этой схемы-->
+        xmlns:tns="http://www.example.com/banks" <!--задает откуда брать элементы с префиксом (ссылается на себя) -->
+        elementFormDefault="qualified">
+}
+В xml: {
+<banks xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns="http://www.example.com/banks" <!--определяет откуда брать пространство имен(с какого пакета) -->
+       xsi:schemaLocation="http://www.example.com/banks banks.xsd"> <!--определяет где лежит .xsd (с пакетом имен) -->
+}

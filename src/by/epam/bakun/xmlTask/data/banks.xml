@@ -1,0 +1,256 @@
+<banks xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns="http://www.example.com/banks"
+       xsi:schemaLocation="http://www.example.com/banks banks.xsd">
+    <bank>
+        <name>BelarusBank</name>
+        <country>Belarus</country>
+        <typesOfDeposit>
+            <typeOfDeposit name="Demand">
+                <depositors>
+                    <depositor name = "Ivanov">
+                        <account_id>1</account_id>
+                        <amountOnDeposit>100000</amountOnDeposit>
+                        <profitability>11</profitability>
+                        <timeConstraints>2021-01-01</timeConstraints>
+                    </depositor>
+                    <depositor name = "Petrov">
+                        <account_id>2</account_id>
+                        <amountOnDeposit>200000</amountOnDeposit>
+                        <profitability>11</profitability>
+                        <timeConstraints>2022-01-01</timeConstraints>
+                    </depositor>
+                    <depositor name = "Sidorov">
+                        <account_id>3</account_id>
+                        <amountOnDeposit>300000</amountOnDeposit>
+                        <profitability>11</profitability>
+                        <timeConstraints>2023-01-01</timeConstraints>
+                    </depositor>
+                </depositors>
+            </typeOfDeposit>
+            <typeOfDeposit name="Term">
+                <depositors>
+                    <depositor name = "Ivanenko">
+                        <account_id>4</account_id>
+                        <amountOnDeposit>400000</amountOnDeposit>
+                        <profitability>12</profitability>
+                        <timeConstraints>2024-01-01</timeConstraints>
+                    </depositor>
+                    <depositor name = "Petrenko">
+                        <account_id>5</account_id>
+                        <amountOnDeposit>500000</amountOnDeposit>
+                        <profitability>12</profitability>
+                        <timeConstraints>2025-01-01</timeConstraints>
+                    </depositor>
+                    <depositor name = "Sidorenko">
+                        <account_id>6</account_id>
+                        <amountOnDeposit>600000</amountOnDeposit>
+                        <profitability>12</profitability>
+                        <timeConstraints>2026-01-01</timeConstraints>
+                    </depositor>
+                </depositors>
+            </typeOfDeposit>
+            <typeOfDeposit name="Calculated">
+                <depositors>
+                    <depositor name = "Ivanchuk">
+                        <account_id>7</account_id>
+                        <amountOnDeposit>700000</amountOnDeposit>
+                        <profitability>13</profitability>
+                        <timeConstraints>2027-01-01</timeConstraints>
+                    </depositor>
+                    <depositor name = "Petrochuk">
+                        <account_id>8</account_id>
+                        <amountOnDeposit>800000</amountOnDeposit>
+                        <profitability>13</profitability>
+                        <timeConstraints>2028-01-01</timeConstraints>
+                    </depositor>
+                    <depositor name = "Sidorchuk">
+                        <account_id>9</account_id>
+                        <amountOnDeposit>900000</amountOnDeposit>
+                        <profitability>13</profitability>
+                        <timeConstraints>2029-01-01</timeConstraints>
+                    </depositor>
+                </depositors>
+            </typeOfDeposit>
+            <typeOfDeposit name="Storage">
+                <depositors>
+                    <depositor name = "Ivanin">
+                        <account_id>10</account_id>
+                        <amountOnDeposit>1000000</amountOnDeposit>
+                        <profitability>14</profitability>
+                        <timeConstraints>2030-01-01</timeConstraints>
+                    </depositor>
+                    <depositor name = "Petrin">
+                        <account_id>11</account_id>
+                        <amountOnDeposit>1100000</amountOnDeposit>
+                        <profitability>14</profitability>
+                        <timeConstraints>2031-01-01</timeConstraints>
+                    </depositor>
+                    <depositor name = "Sidorin">
+                        <account_id>12</account_id>
+                        <amountOnDeposit>1200000</amountOnDeposit>
+                        <profitability>14</profitability>
+                        <timeConstraints>2032-01-01</timeConstraints>
+                    </depositor>
+                </depositors>
+            </typeOfDeposit>
+            <typeOfDeposit name="Saving">
+                <depositors>
+                    <depositor name = "Sergeev">
+                        <account_id>13</account_id>
+                        <amountOnDeposit>1300000</amountOnDeposit>
+                        <profitability>15</profitability>
+                        <timeConstraints>2033-01-01</timeConstraints>
+                    </depositor>
+                    <depositor name = "Egorov">
+                        <account_id>14</account_id>
+                        <amountOnDeposit>1400000</amountOnDeposit>
+                        <profitability>15</profitability>
+                        <timeConstraints>2034-01-01</timeConstraints>
+                    </depositor>
+                </depositors>
+            </typeOfDeposit>
+            <typeOfDeposit name="Metallic">
+                <depositors>
+                    <depositor name = "Sergeenko">
+                        <account_id>15</account_id>
+                        <amountOnDeposit>1500000</amountOnDeposit>
+                        <profitability>16</profitability>
+                        <timeConstraints>2035-01-01</timeConstraints>
+                    </depositor>
+                    <depositor name = "Egorenko">
+                        <account_id>16</account_id>
+                        <amountOnDeposit>1600000</amountOnDeposit>
+                        <profitability>16</profitability>
+                        <timeConstraints>2036-01-01</timeConstraints>
+                    </depositor>
+                </depositors>
+            </typeOfDeposit>
+        </typesOfDeposit>
+    </bank>
+    <bank>
+        <name>Econom</name>
+        <country>Belarus</country>
+        <typesOfDeposit>
+            <typeOfDeposit name="Demand">
+                <depositors>
+                    <depositor name = "Ivanov">
+                        <account_id>1</account_id>
+                        <amountOnDeposit>100000</amountOnDeposit>
+                        <profitability>11</profitability>
+                        <timeConstraints>2021-01-01</timeConstraints>
+                    </depositor>
+                    <depositor name = "Petrov">
+                        <account_id>2</account_id>
+                        <amountOnDeposit>200000</amountOnDeposit>
+                        <profitability>11</profitability>
+                        <timeConstraints>2022-01-01</timeConstraints>
+                    </depositor>
+                    <depositor name = "Sidorov">
+                        <account_id>3</account_id>
+                        <amountOnDeposit>300000</amountOnDeposit>
+                        <profitability>11</profitability>
+                        <timeConstraints>2023-01-01</timeConstraints>
+                    </depositor>
+                </depositors>
+            </typeOfDeposit>
+            <typeOfDeposit name="Term">
+                <depositors>
+                    <depositor name = "Ivanenko">
+                        <account_id>4</account_id>
+                        <amountOnDeposit>400000</amountOnDeposit>
+                        <profitability>12</profitability>
+                        <timeConstraints>2024-01-01</timeConstraints>
+                    </depositor>
+                    <depositor name = "Petrenko">
+                        <account_id>5</account_id>
+                        <amountOnDeposit>500000</amountOnDeposit>
+                        <profitability>12</profitability>
+                        <timeConstraints>2025-01-01</timeConstraints>
+                    </depositor>
+                    <depositor name = "Sidorenko">
+                        <account_id>6</account_id>
+                        <amountOnDeposit>600000</amountOnDeposit>
+                        <profitability>12</profitability>
+                        <timeConstraints>2026-01-01</timeConstraints>
+                    </depositor>
+                </depositors>
+            </typeOfDeposit>
+            <typeOfDeposit name="Calculated">
+                <depositors>
+                    <depositor name = "Ivanchuk">
+                        <account_id>7</account_id>
+                        <amountOnDeposit>700000</amountOnDeposit>
+                        <profitability>13</profitability>
+                        <timeConstraints>2027-01-01</timeConstraints>
+                    </depositor>
+                    <depositor name = "Petrochuk">
+                        <account_id>8</account_id>
+                        <amountOnDeposit>800000</amountOnDeposit>
+                        <profitability>13</profitability>
+                        <timeConstraints>2028-01-01</timeConstraints>
+                    </depositor>
+                    <depositor name = "Sidorchuk">
+                        <account_id>9</account_id>
+                        <amountOnDeposit>900000</amountOnDeposit>
+                        <profitability>13</profitability>
+                        <timeConstraints>2029-01-01</timeConstraints>
+                    </depositor>
+                </depositors>
+            </typeOfDeposit>
+            <typeOfDeposit name="Storage">
+                <depositors>
+                    <depositor name = "Ivanin">
+                        <account_id>10</account_id>
+                        <amountOnDeposit>1000000</amountOnDeposit>
+                        <profitability>14</profitability>
+                        <timeConstraints>2030-01-01</timeConstraints>
+                    </depositor>
+                    <depositor name = "Petrin">
+                        <account_id>11</account_id>
+                        <amountOnDeposit>1100000</amountOnDeposit>
+                        <profitability>14</profitability>
+                        <timeConstraints>2031-01-01</timeConstraints>
+                    </depositor>
+                    <depositor name = "Sidorin">
+                        <account_id>12</account_id>
+                        <amountOnDeposit>1200000</amountOnDeposit>
+                        <profitability>14</profitability>
+                        <timeConstraints>2032-01-01</timeConstraints>
+                    </depositor>
+                </depositors>
+            </typeOfDeposit>
+            <typeOfDeposit name="Saving">
+                <depositors>
+                    <depositor name = "Sergeev">
+                        <account_id>13</account_id>
+                        <amountOnDeposit>1300000</amountOnDeposit>
+                        <profitability>15</profitability>
+                        <timeConstraints>2033-01-01</timeConstraints>
+                    </depositor>
+                    <depositor name = "Egorov">
+                        <account_id>14</account_id>
+                        <amountOnDeposit>1400000</amountOnDeposit>
+                        <profitability>15</profitability>
+                        <timeConstraints>2034-01-01</timeConstraints>
+                    </depositor>
+                </depositors>
+            </typeOfDeposit>
+            <typeOfDeposit name="Metallic">
+                <depositors>
+                    <depositor name = "Sergeenko">
+                        <account_id>15</account_id>
+                        <amountOnDeposit>1500000</amountOnDeposit>
+                        <profitability>16</profitability>
+                        <timeConstraints>2035-01-01</timeConstraints>
+                    </depositor>
+                    <depositor name = "Egorenko">
+                        <account_id>16</account_id>
+                        <amountOnDeposit>1600000</amountOnDeposit>
+                        <profitability>16</profitability>
+                        <timeConstraints>2036-01-01</timeConstraints>
+                    </depositor>
+                </depositors>
+            </typeOfDeposit>
+        </typesOfDeposit>
+    </bank>
+</banks>

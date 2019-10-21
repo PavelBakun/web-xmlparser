@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema"
+        targetNamespace="http://www.example.com/banks"
+        xmlns:tns="http://www.example.com/banks"
+        elementFormDefault="qualified">
+    <element name="banks">
+        <complexType>
+            <sequence>
+                <element name="bank"
+                         type="tns:Bank"
+                         minOccurs="1"
+                         maxOccurs="unbounded" />
+            </sequence>
+        </complexType>
+    </element>
+    <complexType name="Bank">
+        <sequence>
+            <element name="name" type="string" />
+            <element name="country" type="string" />
+            <element name="typesOfDeposit" type="tns:TypesOfDeposit" />
+        </sequence>
+    </complexType>
+    <complexType name="TypesOfDeposit">
+        <sequence>
+            <element name="typeOfDeposit" type="tns:TypeOfDeposit" minOccurs="1" maxOccurs="unbounded"/>
+        </sequence>
+    </complexType>
+    <complexType name="TypeOfDeposit">
+        <sequence>
+            <element name="depositors" type="tns:Depositors" minOccurs="0" maxOccurs="unbounded"/>
+        </sequence>
+        <attribute name="name" use="optional" default="Demand">
+            <simpleType>
+                <restriction base="string">
+                    <enumeration value="Demand"></enumeration>
+                    <enumeration value="Term"></enumeration>
+                    <enumeration value="Calculated"></enumeration>
+                    <enumeration value="Storage"></enumeration>
+                    <enumeration value="Saving"></enumeration>
+                    <enumeration value="Metallic"></enumeration>
+                </restriction>
+            </simpleType>
+        </attribute>
+    </complexType>
+    <complexType name="Depositors">
+        <sequence>
+            <element name="depositor" type="tns:Depositor" minOccurs="0" maxOccurs="unbounded"/>
+        </sequence>
+    </complexType>
+    <complexType name="Depositor">
+        <sequence>
+            <element name="account_id" type="tns:Account_id" />
+            <element name="amountOnDeposit" type="double" minOccurs="0" maxOccurs="unbounded" default="0" />
+            <element name="profitability" type="double" minOccurs="0" maxOccurs="100" default="10" />
+            <element name="timeConstraints" type="date" />
+        </sequence>
+        <attribute name="name" type="string" use="required" />
+    </complexType>
+    <simpleType name="Account_id">
+        <restriction base="string">
+            <pattern value="[0-9]{0,6}"/>
+        </restriction>
+    </simpleType>
+</schema>
+
